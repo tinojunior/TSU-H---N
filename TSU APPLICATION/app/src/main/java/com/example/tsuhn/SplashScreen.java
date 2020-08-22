@@ -28,6 +28,5 @@ import com.example.tsuhn.ui.main.SectionsPagerAdapter;
                 finish();
             }
         }, SPLASH_TIME_OUT);
-
     }
 }

@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15DBF4"
+    android:backgroundTint="#2196F3"
+    android:backgroundTintMode="src_over">
 
+    <Button
+        android:id="@+id/credsbutton"
+        android:layout_width="222dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="#FFC107"
+        android:backgroundTintMode="src_over"
+        android:breakStrategy="high_quality"
+        android:bufferType="spannable"
+        android:text="@string/creds"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#00BCD4"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="314dp"
+        android:layout_height="154dp"
+        android:alpha="@dimen/activity_horizontal_margin"
+        android:shadowColor="#ED6996"
+        android:text="@string/text_tsu"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFC107"
+        android:textColorHint="#9C27B0"
+        android:textColorLink="#9C27B0"
+        android:textDirection="inherit"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/credsbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="229dp"
+        android:layout_height="209dp"
+        android:contentDescription="@string/text_tsu"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guestbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credsbutton"
+        app:srcCompat="@drawable/tsu_logo" />
+
+    <Button
+        android:id="@+id/guestbutton"
+        android:layout_width="205dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FFC107"
+        android:contentDescription="@string/text_tsu"
+        android:text="@string/guest"
+        android:textColor="#12D4ED"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

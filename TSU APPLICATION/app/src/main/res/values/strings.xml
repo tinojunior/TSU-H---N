@@ -2,4 +2,7 @@
     <string name="app_name">TSU H &amp; N</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="text_tsu"><![CDATA[Getting Started with TSU H & N]]></string>
+    <string name="creds">Continue With Credentials</string>
+    <string name="guest">Continue As Guest</string>
 </resources>
